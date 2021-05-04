@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="574.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Iphone.ip12Pro">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="584.4" prefWidth="564.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="117.0" prefWidth="554.0" style="-fx-background-color: #333333; -fx-background-radius: 1.5;">
+               <children>
+                  <ImageView fx:id="brandImgView" fitHeight="118.0" fitWidth="208.0" layoutX="157.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../res/iphone/brandIp.gif" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="489.0" layoutY="14.0" onAction="#back" prefHeight="38.0" prefWidth="46.0" style="-fx-background-color: #fff;" text=".">
+                     <graphic>
+                        <ImageView fx:id="backImgView" fitHeight="35.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../res/content/back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.25824175824175827">
+                                 <color>
+                                    <Color red="0.6105263233184814" green="0.6105263233184814" blue="0.29169589281082153" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.5027472527472527">
+                                 <color>
+                                    <Color red="0.11578947305679321" green="0.11578947305679321" blue="0.02959064394235611" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.6346153846153846">
+                                 <color>
+                                    <Color red="0.9578947424888611" green="0.9578947424888611" blue="0.9507992267608643" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <MediaView fx:id="mv" fitHeight="302.0" fitWidth="554.0" layoutY="118.0" />
+            <HBox layoutY="423.0" prefHeight="30.0" prefWidth="554.0" style="-fx-background-color: #ccc;">
+               <children>
+                  <JFXButton onAction="#slow" style="-fx-background-color: #ccc; -fx-border-color: white; -fx-background-radius: 2;" text="slow" textFill="#d11212">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="10.0" onAction="#play" style="-fx-background-color: #ccc; -fx-background-radius: 2; -fx-border-color: white;" text="play" textFill="#d73c3c">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="60.0" layoutY="10.0" onAction="#pause" style="-fx-background-color: #ccc; -fx-background-radius: 2; -fx-border-color: white;" text="pause" textFill="#b41e1e">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="108.0" layoutY="10.0" onAction="#fast" style="-fx-background-color: #ccc; -fx-background-radius: 2; -fx-border-color: white;" text="fast" textFill="#d11515">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fx:id="volImgView" fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../res/symbol/volume.png" />
+                     </image>
+                  </ImageView>
+                  <JFXSlider fx:id="volSlider" prefHeight="34.0" prefWidth="140.0" />
+               </children>
+            </HBox>
+            <AnchorPane layoutY="454.0" prefHeight="118.0" prefWidth="554.0" style="-fx-background-color: #333333;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

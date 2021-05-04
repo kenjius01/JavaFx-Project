@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="574.0" prefWidth="554.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Myphone">
+   <children>
+      <TableView fx:id="tableView" layoutX="77.0" prefHeight="440.0" prefWidth="554.0" AnchorPane.bottomAnchor="134.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="col_Code" prefWidth="116.79998624324799" style="-fx-alignment: center;" text="Product Code" />
+          <TableColumn fx:id="col_Name" prefWidth="265.59998321533203" style="-fx-alignment: center;" text="Product Name" />
+            <TableColumn fx:id="col_price" prefWidth="171.99996948242188" style="-fx-alignment: center;" text="price" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imageProduct" fitHeight="130.0" fitWidth="178.0" layoutX="187.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/content/mycart.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="phoneAnchor" prefHeight="574.0" prefWidth="554.0" style="-fx-background-color: #ccc;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Xiaomi">
+   <children>
+      <JFXButton contentDisplay="TOP" layoutX="29.0" layoutY="58.0" onAction="#mi11Click" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Xiaomi Mi 11 5G">
+         <graphic>
+            <ImageView fx:id="mi11ImgView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/mi11.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="293.0" layoutY="58.0" onAction="#mi10tClick" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Xiaomi Mi 10T">
+         <graphic>
+            <ImageView fx:id="mi10tImgView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/mi10t.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="29.0" layoutY="315.0" onAction="#pocoF2Click" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="POCO F2 Pro 5G">
+         <graphic>
+            <ImageView fx:id="pocoImgView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/pocof2.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="293.0" layoutY="315.0" onAction="#note9Click" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Xiaomi Redmi 9 4G">
+         <graphic>
+            <ImageView fx:id="mi9ImgView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/redmi9.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="302.0" layoutY="264.0" prefHeight="18.0" prefWidth="177.0" text="10.300.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="53.0" layoutY="264.0" prefHeight="18.0" prefWidth="177.0" text="18.490.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="53.0" layoutY="521.0" prefHeight="18.0" prefWidth="177.0" text="9.200.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="301.0" layoutY="521.0" prefHeight="18.0" prefWidth="177.0" text="2.950.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="back" layoutX="508.0" layoutY="14.0" onAction="#backAction" prefHeight="35.0" prefWidth="46.0" text=".">
+         <graphic>
+            <ImageView fx:id="backImageView" fitHeight="28.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/symbol/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="add" layoutX="27.0" layoutY="58.0" onAction="#add1" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="add1" layoutX="293.0" layoutY="58.0" onAction="#add2" prefHeight="18.0" prefWidth="41.0" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="add2" layoutX="27.0" layoutY="315.0" onAction="#add3" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="add3" layoutX="293.0" layoutY="315.0" onAction="#add4" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: pink;" text="Add" />
+   </children>
+</AnchorPane>

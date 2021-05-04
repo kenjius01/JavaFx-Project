@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="457.0" prefWidth="600.0" style="-fx-background-color: FloralWhite;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+    <children>
+        <TextField fx:id="usernameTextField" layoutX="164.0" layoutY="170.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter your username :" style="-fx-background-image: #ff0000;">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <ImageView fx:id="brandingImageView" fitHeight="119.0" fitWidth="95.0" layoutX="242.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../res/symbol/Smartphone-PNG-Pic.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="accImageView" fitHeight="30.0" fitWidth="34.0" layoutX="114.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../res/symbol/user.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="passImageView" fitHeight="40.0" fitWidth="30.0" layoutX="114.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../res/symbol/password.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="194.0" layoutY="104.0" prefHeight="30.0" prefWidth="124.0" text="Mobile Phone">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.14553865790367126" green="0.16842105984687805" blue="0.12413255125284195" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.7052631378173828" green="0.3369590640068054" blue="0.23508772253990173" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <Label layoutX="318.0" layoutY="104.0" prefHeight="30.0" prefWidth="95.0" text="Review">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.14553865790367126" green="0.16842105984687805" blue="0.12413255125284195" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.8842105269432068" green="0.28392982482910156" blue="0.1178947389125824" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <ImageView fx:id="loadImageView" fitHeight="99.0" fitWidth="105.0" layoutX="239.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../res/symbol/load.gif" />
+            </image>
+        </ImageView>
+      <PasswordField fx:id="passwordField" layoutX="165.0" layoutY="225.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter Your Password :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="164.0" layoutY="266.0" prefHeight="18.0" prefWidth="250.0" textFill="#e70808" />
+      <JFXButton fx:id="signUp" layoutX="495.0" layoutY="33.0" onAction="#signUp" prefHeight="39.0" prefWidth="78.0" style="-fx-background-color: WhiteSmoke;" text="Sign Up">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8736842274665833" green="0.1747368425130844" blue="0.1747368425130844" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2774725274725275">
+                     <color>
+                        <Color red="0.22154386341571808" green="0.23157894611358643" blue="0.18526315689086914" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5806451612903226">
+                     <color>
+                        <Color red="0.8736842274665833" green="0.1747368425130844" blue="0.1747368425130844" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.21052631735801697" green="0.08654970675706863" blue="0.08654970675706863" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="login" layoutX="337.0" layoutY="284.0" onAction="#loginButton" prefHeight="39.0" prefWidth="78.0" style="-fx-background-color: WhiteSmoke;" text="Log In">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.20610685566909442">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8736842274665833" green="0.019415205344557762" blue="0.019415205344557762" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.36813186813186816">
+                     <color>
+                        <Color red="0.8631578683853149" green="0.4763352870941162" blue="0.4763352870941162" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.456043956043956">
+                     <color>
+                        <Color red="0.10999999940395355" green="0.01979999989271164" blue="0.01979999989271164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7250384024577572">
+                     <color>
+                        <Color red="0.8736842274665833" green="0.019415205344557762" blue="0.019415205344557762" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.11578947305679321" green="0.01972709596157074" blue="0.01972709596157074" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXCheckBox fx:id="checkBox" checkedColor="#10509c" layoutX="164.0" layoutY="292.0" onAction="#check" prefHeight="30.0" prefWidth="124.0" text="Remember me" />
+      <JFXButton layoutX="180.0" layoutY="342.0" prefHeight="26.0" prefWidth="220.0" text="Forgot your password?" underline="true">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+    </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="home" prefHeight="574.0" prefWidth="554.0" style="-fx-background-color: #d6d6d6;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home">
+   <children>
+      <JFXButton fx:id="samsungBtn" alignment="CENTER" contentDisplay="TOP" layoutX="56.0" layoutY="50.0" onAction="#samsungBtn" prefHeight="211.0" prefWidth="210.0" style="-fx-background-color: #fff;" text="SamSung" textFill="#232121">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="ssImageView" fitHeight="140.0" fitWidth="206.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/samsung.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="ipBtn" alignment="CENTER" contentDisplay="TOP" layoutX="295.0" layoutY="50.0" onAction="#iphoneBtn" prefHeight="211.0" prefWidth="210.0" style="-fx-background-color: #fff;" text="Iphone" textFill="#362f2f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="ipImageView" fitHeight="140.0" fitWidth="206.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/iphone.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="56.0" layoutY="304.0" onAction="#xiaomiBtn" prefHeight="211.0" prefWidth="210.0" style="-fx-background-color: #fff;" text="Xiaomi" textFill="#3e3939" fx:id="xiBtn">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="140.0" fitWidth="206.0" pickOnBounds="true" preserveRatio="true" fx:id="xmImageView">
+               <image>
+                  <Image url="@../../res/content/xiaomi.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="viBtn" alignment="CENTER" contentDisplay="TOP" layoutX="295.0" layoutY="304.0" onAction="#vivoBtn" prefHeight="211.0" prefWidth="210.0" style="-fx-background-color: #fff;" text="Vivo" textFill="#302a2a">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="vvImageView" fitHeight="140.0" fitWidth="206.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/vivo.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

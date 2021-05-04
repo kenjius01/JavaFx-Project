@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavFxProject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavFxProject_jar</output-path>
+    <root id="archive" name="JavFxProject.jar">
+      <element id="module-output" name="JavFxProject" />
+      <element id="extracted-dir" path="D:/javaFx/jfoenix.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.23.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javaFx/jfoenix-9.0.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javaFx/javafx-sdk-16/lib/src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javaFx/javafx-sdk-16/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javaFx/javafx-sdk-16/lib/javafx.web.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javaFx/javafx-sdk-16/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javaFx/javafx-sdk-16/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javaFx/javafx-sdk-16/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javaFx/javafx-sdk-16/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javaFx/javafx-sdk-16/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javaFx/javafx-sdk-16/lib/javafx.graphics.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

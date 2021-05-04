@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="574.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Xiaomi.PocoF2">
+    <children>
+        <AnchorPane prefHeight="117.0" prefWidth="554.0" style="-fx-background-color: white;">
+            <children>
+                <ImageView fx:id="brandImgView" fitHeight="127.0" fitWidth="157.0" layoutX="190.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../res/xiaomi/xiaomiSymbol.gif" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <MediaView fx:id="mv" fitHeight="302.0" fitWidth="554.0" layoutY="118.0" />
+        <HBox layoutY="423.0" prefHeight="30.0" prefWidth="554.0" style="-fx-background-color: #ccc;">
+            <children>
+                <JFXButton onAction="#slow" style="-fx-background-color: pink; -fx-border-color: white; -fx-background-radius: 2;" text="slow" textFill="#0ca943b8">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="10.0" layoutY="10.0" onAction="#play" style="-fx-background-color: pink; -fx-background-radius: 2; -fx-border-color: white;" text="play" textFill="#0ca943">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="60.0" layoutY="10.0" onAction="#pause" style="-fx-background-color: pink; -fx-background-radius: 2; -fx-border-color: white;" text="pause" textFill="#0ca943">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="108.0" layoutY="10.0" onAction="#fast" style="-fx-background-color: pink; -fx-background-radius: 2; -fx-border-color: white;" text="fast" textFill="#0ca943">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </JFXButton>
+                <ImageView fx:id="volImgView" fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../res/symbol/volume.png" />
+                    </image>
+                </ImageView>
+                <JFXSlider fx:id="volSlider" prefHeight="34.0" prefWidth="140.0" />
+            </children>
+        </HBox>
+        <AnchorPane layoutY="454.0" prefHeight="118.0" prefWidth="554.0" style="-fx-background-color: white;" />
+        <JFXButton layoutX="499.0" layoutY="22.0" onAction="#back" prefHeight="38.0" prefWidth="46.0" style="-fx-background-color: #fff;" text=".">
+            <graphic>
+                <ImageView fx:id="backImgView" fitHeight="35.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../res/content/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+    </children>
+</AnchorPane>

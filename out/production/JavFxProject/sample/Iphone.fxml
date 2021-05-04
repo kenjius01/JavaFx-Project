@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="phoneAnchor" prefHeight="574.0" prefWidth="554.0" style="-fx-background-color: #ccc;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Iphone">
+   <children>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="32.0" layoutY="59.0" onAction="#ip12Click" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="IPhone 12 Pro Max 512GB">
+         <graphic>
+            <ImageView fx:id="ip12ImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/12promax.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="289.0" layoutY="59.0" onAction="#ip11Click" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="IPhone 11 Pro Max 256GB">
+         <graphic>
+            <ImageView fx:id="ip11ImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/ip11prmax.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="32.0" layoutY="314.0" onAction="#ipXrClick" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="IPhone XR 256GB">
+         <graphic>
+            <ImageView fx:id="ipxrImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/ipxr.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="289.0" layoutY="314.0" onAction="#ip8Click" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="IPhone 8 Plus 64GB">
+         <graphic>
+            <ImageView fx:id="ip8ImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/ip8plus.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="263.0" prefHeight="18.0" prefWidth="177.0" text="38.500.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="313.0" layoutY="264.0" prefHeight="18.0" prefWidth="178.0" text="32.000.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="519.0" prefHeight="18.0" prefWidth="177.0" text="16.990.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="313.0" layoutY="519.0" prefHeight="18.0" prefWidth="177.0" text="12.000.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="add" layoutX="32.0" layoutY="59.0" onAction="#add1" prefHeight="18.0" prefWidth="42.0" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="add1" layoutX="289.0" layoutY="59.0" onAction="#add2" prefHeight="18.0" prefWidth="42.0" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="add2" layoutX="32.0" layoutY="314.0" onAction="#add3" prefHeight="18.0" prefWidth="42.0" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="add3" layoutX="289.0" layoutY="314.0" onAction="#add4" prefHeight="18.0" prefWidth="42.0" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="back" layoutX="502.0" layoutY="14.0" onAction="#backAction" prefHeight="32.0" prefWidth="51.0" text=".">
+         <graphic>
+            <ImageView fx:id="backImageView" fitHeight="26.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/symbol/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

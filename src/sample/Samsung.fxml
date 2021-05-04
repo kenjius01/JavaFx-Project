@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="phoneAnchor" prefHeight="574.0" prefWidth="554.0" style="-fx-background-color: #ccc;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Samsung">
+   <children>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="35.0" layoutY="38.0" onAction="#ss20Click" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Samsung Galaxy Note 20 Ultra">
+         <graphic>
+            <ImageView fx:id="note20ImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/samsungNote20.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="89.0" layoutY="243.0" prefHeight="18.0" prefWidth="139.0" text="22.500.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="298.0" layoutY="38.0" onAction="#s21Click" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Samsung Galaxy S21 Plus 5G">
+         <graphic>
+            <ImageView fx:id="s21ImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/samsungs21.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="35.0" layoutY="307.0" onAction="#zfoldClick" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Samsung Galaxy Z Fold2 5G">
+         <graphic>
+            <ImageView fx:id="foldImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/ssfold.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="298.0" layoutY="307.0" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Samsung Galaxy A11">
+         <graphic>
+            <ImageView fx:id="a11ImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/ssA11.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="89.0" layoutY="512.0" prefHeight="18.0" prefWidth="139.0" text="47.500.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="341.0" layoutY="243.0" prefHeight="18.0" prefWidth="139.0" text="21.300.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="348.0" layoutY="512.0" prefHeight="18.0" prefWidth="139.0" text="2.700.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="add" layoutX="35.0" layoutY="38.0" onAction="#addBtn" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="add1" layoutX="298.0" layoutY="38.0" onAction="#addBtn1" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="add2" layoutX="35.0" layoutY="307.0" onAction="#addBtn2" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="add3" layoutX="298.0" layoutY="307.0" onAction="#addBtn3" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="back" layoutX="507.0" onAction="#backAction" prefHeight="33.0" prefWidth="45.0" text=".">
+         <graphic>
+            <ImageView fx:id="backImageView" fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/symbol/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

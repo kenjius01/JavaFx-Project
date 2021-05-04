@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="phoneAnchor" prefHeight="574.0" prefWidth="554.0" style="-fx-background-color: #ccc;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Vivo">
+   <children>
+      <JFXButton contentDisplay="TOP" layoutX="39.0" layoutY="55.0" onAction="#x60Click" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Vivo X60 Pro 5G">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" fx:id="x60ImageView">
+               <image>
+                  <Image url="@../../res/content/vivox60.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="63.0" layoutY="260.0" prefHeight="18.0" prefWidth="178.0" text="14.992.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton contentDisplay="TOP" layoutX="293.0" layoutY="55.0" onAction="#v20Click" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Vivo V20">
+         <graphic>
+            <ImageView fx:id="v20ImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/vivo-v20_2_.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="39.0" layoutY="316.0" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Vivo Y11">
+         <graphic>
+            <ImageView fx:id="y11ImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/vivo-y11_1_.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="293.0" layoutY="316.0" prefHeight="232.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Vivo Y20">
+         <graphic>
+            <ImageView fx:id="y20ImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/content/vivo-y20.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="317.0" layoutY="260.0" prefHeight="18.0" prefWidth="178.0" text="6.790.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="63.0" layoutY="522.0" prefHeight="18.0" prefWidth="178.0" text="2.590.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="317.0" layoutY="522.0" prefHeight="18.0" prefWidth="178.0" text="3.290.000 ₫" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="back" layoutX="498.0" layoutY="6.0" onAction="#backAction" prefHeight="34.0" prefWidth="48.0" text=".">
+         <graphic>
+            <ImageView fx:id="backImageView" fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/symbol/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="add" layoutX="37.0" layoutY="55.0" onAction="#add1" prefHeight="26.0" prefWidth="38.0" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="add1" layoutX="291.0" layoutY="55.0" onAction="#add2" prefHeight="26.0" prefWidth="38.0" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="add2" layoutX="39.0" layoutY="316.0" prefHeight="26.0" prefWidth="38.0" style="-fx-background-color: pink;" text="Add" />
+      <JFXButton fx:id="add11" layoutX="291.0" layoutY="316.0" prefHeight="26.0" prefWidth="38.0" style="-fx-background-color: pink;" text="Add" />
+   </children>
+</AnchorPane>

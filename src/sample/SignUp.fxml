@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="487.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpController">
+   <children>
+      <AnchorPane layoutY="-40.0" prefHeight="108.0" prefWidth="600.0" style="-fx-background-color: #67bb65;">
+         <children>
+            <ImageView fx:id="brandImageview" fitHeight="55.0" fitWidth="67.0" layoutX="34.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/symbol/animated_register.gif" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="89.0" layoutY="68.0" prefHeight="18.0" prefWidth="150.0" text="User Registration" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="usernameTextField" layoutX="166.0" layoutY="150.0" prefHeight="26.0" prefWidth="254.0" promptText="Enter your username" />
+      <ImageView fx:id="userImageView" fitHeight="26.0" fitWidth="31.0" layoutX="126.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/symbol/user.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordField" layoutX="166.0" layoutY="213.0" prefHeight="26.0" prefWidth="254.0" promptText="Enter your password" />
+      <ImageView fx:id="passImageView" fitHeight="26.0" fitWidth="31.0" layoutX="121.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/symbol/password.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="genderImageView" fitHeight="26.0" fitWidth="31.0" layoutX="125.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/symbol/gender.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="emailImageView" fitHeight="26.0" fitWidth="31.0" layoutX="123.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/symbol/email.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="loadImageView" fitHeight="55.0" fitWidth="55.0" layoutX="256.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/symbol/oxygen-loader.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="signUpMessageLabel" alignment="CENTER" layoutX="166.0" layoutY="113.0" prefHeight="18.0" prefWidth="254.0" textFill="#f40808" />
+      <Label fx:id="signUpMessageLabel1" alignment="CENTER" layoutX="166.0" layoutY="104.0" prefHeight="18.0" prefWidth="254.0" textFill="#0a41f2" />
+      <TextField fx:id="emailField" layoutX="173.0" layoutY="315.0" prefHeight="26.0" prefWidth="254.0" promptText="Enter your email:" />
+      <JFXButton fx:id="logIn" layoutX="484.0" layoutY="87.0" onAction="#signUp" prefHeight="34.0" prefWidth="82.0" style="-fx-background-color: green;" text="Login">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9263157844543457" green="0.9023001790046692" blue="0.903901219367981" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.22273425499231952">
+                     <color>
+                        <Color red="0.8450467586517334" green="0.8445613980293274" blue="0.8736842274665833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.32411674347158226">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.43956043956043955">
+                     <color>
+                        <Color red="0.8443350195884705" green="0.8439000248908997" blue="0.8700000047683716" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7388632872503841">
+                     <color>
+                        <Color red="0.9368420839309692" green="0.9194931983947754" blue="0.9209389090538025" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></JFXButton>
+      <JFXButton fx:id="register" layoutX="173.0" layoutY="364.0" onAction="#signUpButton" prefHeight="34.0" prefWidth="254.0" style="-fx-background-color: green;" text="Sign Up">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9684210419654846" green="0.9540740847587585" blue="0.9540740847587585" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5192307692307692">
+                     <color>
+                        <Color red="0.9157894849777222" green="0.9090058207511902" blue="0.9090058207511902" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9578947424888611" green="0.9437037110328674" blue="0.9437037110328674" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill></JFXButton>
+      <JFXRadioButton fx:id="maleButton" layoutX="173.0" layoutY="275.0" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+         <selectedColor>
+            <Color red="0.20959064364433289" green="0.38749316334724426" blue="0.6736842393875122" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="femaleButton" layoutX="264.0" layoutY="275.0" text="Female" toggleGroup="$gender">
+         <selectedColor>
+            <Color red="0.13149318099021912" green="0.09426900744438171" blue="0.6526315808296204" />
+         </selectedColor></JFXRadioButton>
+      <JFXRadioButton fx:id="otherButton" layoutX="369.0" layoutY="275.0" prefHeight="18.0" prefWidth="72.0" text="Other" toggleGroup="$gender">
+         <selectedColor>
+            <Color red="0.061000000685453415" green="0.0863872841000557" blue="0.6100000143051147" />
+         </selectedColor></JFXRadioButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="note20Anchor" prefHeight="574.0" prefWidth="554.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Samsung.Zfold2">
+   <children>
+      <HBox layoutY="425.0" prefHeight="30.0" prefWidth="554.0" style="-fx-background-color: #ccc;">
+         <children>
+            <JFXButton onAction="#slow" style="-fx-background-color: #ccc; -fx-border-color: white; -fx-background-radius: 2;" text="slow" textFill="#f72626">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="10.0" onAction="#play" style="-fx-background-color: #ccc; -fx-background-radius: 2; -fx-border-color: white;" text="play" textFill="#ec4242">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="60.0" layoutY="10.0" onAction="#pause" style="-fx-background-color: #ccc; -fx-background-radius: 2; -fx-border-color: white;" text="pause" textFill="#f25252">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="108.0" layoutY="10.0" onAction="#fast" style="-fx-background-color: #ccc; -fx-background-radius: 2; -fx-border-color: white;" text="fast" textFill="#d43d3d">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="volImgView" fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/symbol/volume.png" />
+               </image>
+            </ImageView>
+            <JFXSlider fx:id="volSlider" prefHeight="34.0" prefWidth="140.0" />
+         </children>
+      </HBox>
+      <AnchorPane layoutY="457.0" prefHeight="118.0" prefWidth="554.0" style="-fx-background-color: black;" />
+      <MediaView fx:id="mv" fitHeight="302.0" fitWidth="554.0" layoutY="118.0" AnchorPane.bottomAnchor="154.60000000000002" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.39999999999997726" AnchorPane.topAnchor="118.0" />
+      <AnchorPane prefHeight="117.0" prefWidth="554.0" style="-fx-background-color: black; -fx-background-radius: 1.5;">
+         <children>
+            <ImageView fx:id="brandImgView" fitHeight="150.0" fitWidth="200.0" layoutX="165.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/Samsung/samsungBrand.gif" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="489.0" layoutY="12.0" onAction="#back" prefHeight="38.0" prefWidth="46.0" style="-fx-background-color: #fff;" text=".">
+               <graphic>
+                  <ImageView fx:id="backImgView" fitHeight="35.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../res/content/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

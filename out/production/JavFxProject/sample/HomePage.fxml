@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" prefHeight="635.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomePageController">
+   <children>
+      <Pane prefHeight="635.0" prefWidth="208.0" style="-fx-background-color: #67bb65;">
+         <children>
+            <ImageView fx:id="brandImageView" fitHeight="105.0" fitWidth="112.0" layoutX="31.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/symbol/Smartphone-PNG-Pic.png" />
+               </image>
+            </ImageView>
+            <Line endX="-21.000015258789062" layoutX="101.0" layoutY="115.0" startX="-100.0" stroke="#faf3f3" />
+            <AnchorPane layoutX="4.0" layoutY="156.0" prefHeight="106.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="18.0" prefWidth="154.0" text="Welcome to the Shop!" textFill="#fcfbfb" />
+                  <Label alignment="CENTER" layoutX="20.0" layoutY="43.0" prefHeight="18.0" prefWidth="154.0" text="Here you will find" textFill="#fcfbfb" />
+                  <Label alignment="CENTER" layoutX="20.0" layoutY="68.0" prefHeight="18.0" prefWidth="154.0" text="Mobile phones information" textFill="#fcfbfb" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-8.0" layoutY="262.0" prefHeight="377.0" prefWidth="225.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="47.0" layoutY="22.0" prefHeight="18.0" prefWidth="105.0" text="DASHBOARD" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Line endX="45.19999694824219" layoutX="134.0" layoutY="59.0" startX="-120.00001525878906" stroke="#faf3f3" />
+                  <Label fx:id="label" alignment="CENTER" layoutX="180.0" layoutY="164.0" prefHeight="18.0" prefWidth="25.0" style="-fx-background-color: #2196f3;" text="0" textFill="WHITE" />
+                  <Line endX="-18.800003051757812" layoutX="121.0" layoutY="272.0" startX="-120.00001525878906" stroke="#faf3f3" />
+                  <JFXButton fx:id="contactBtn" layoutX="47.0" layoutY="306.0" onAction="#contactUs" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #363948; -fx-border-color: #fff;" text="CONTACT US" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="homeBtn" layoutX="44.0" layoutY="105.0" onAction="#homeBtn" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #000;" text="HOME" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="myPhone" layoutX="44.0" layoutY="157.0" onAction="#myPhoneBtn" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #000;" text="MY PHONES" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="aboutButton" layoutX="44.0" layoutY="210.0" onAction="#aboutUs" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #000;" text="ABOUT" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Separator layoutX="208.0" layoutY="60.0" prefHeight="1.0" prefWidth="554.0" />
+      <AnchorPane fx:id="holderPane" layoutX="208.0" layoutY="58.0" prefHeight="574.0" prefWidth="554.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="208.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="58.0" />
+      <JFXToolbar fx:id="toolbar" layoutX="208.0" layoutY="-1.0" prefHeight="59.0" prefWidth="555.0" style="-fx-background-color: #67bb65;">
+         <center>
+            <Text fx:id="welcome" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome," wrappingWidth="96.17773365974426" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Text>
+         </center>
+         <right>
+            <HBox fx:id="toolbarRight" prefHeight="18.0" prefWidth="26.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lbMenu" prefHeight="30.0" prefWidth="26.0">
+                     <graphic>
+                        <ImageView fx:id="detailImageView" fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../res/symbol/detail.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+         </right>
+         <left>
+            <ImageView fx:id="welImageView" fitHeight="59.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../res/symbol/welcome.gif" />
+               </image>
+            </ImageView>
+         </left>
+      </JFXToolbar>
+      <VBox fx:id="overflowContainer" layoutX="670.0" layoutY="60.0" prefHeight="75.0" prefWidth="93.0" styleClass="card-white" stylesheets="@custom.css">
+         <children>
+            <JFXButton fx:id="btnLogOut" onAction="#LogOut" prefHeight="38.0" prefWidth="1124.0" text="Log Out">
+               <graphic>
+                  <ImageView fx:id="outImageView" fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../res/symbol/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnExit" layoutX="10.0" layoutY="10.0" onAction="#Exit" prefHeight="34.0" prefWidth="122.0" text="Exit">
+               <graphic>
+                  <ImageView fx:id="exitImageView" fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../res/symbol/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXButton fx:id="none" textFill="#67bb65" />
+   </children>
+</AnchorPane>
