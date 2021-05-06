@@ -152,6 +152,9 @@ public class Myphone implements Initializable {
                     statement.executeUpdate(sql);
                     HomePageController.getInstance().setNum();
                     tableView.getItems().removeAll(tableView.getSelectionModel().getSelectedItem());
+                    File cartFile = new File("res/content/mycart.gif");
+                    Image cartImg = new Image(cartFile.toURI().toString());
+                    imageProduct.setImage(cartImg);
                 }
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
