@@ -20,6 +20,7 @@ import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
 import javafx.util.Duration;
 
+import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -154,6 +155,7 @@ public class LoginController implements Initializable {
             ResultSet rs = statement.executeQuery(check);
             while (rs.next()) {
                 if (rs.getInt("remember") == 1) {
+                    checkBox.setSelected(true);
                     usernameTextField.setText(rs.getString("username"));
                     passwordField.setText(rs.getString("password"));
                 }
@@ -182,5 +184,32 @@ public class LoginController implements Initializable {
                 throwables.printStackTrace();
             }
         }
+        else {
+            String updateSql = "UPDATE account SET remember = 0 \n";
+            databaseConnnection connnection = new databaseConnnection();
+            Connection conn = connnection.getConnection();
+            try {
+                Statement statement = conn.createStatement();
+                statement.executeUpdate(updateSql);
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+    }
+
+    public void forgot() throws IOException {
+        if (username().isBlank()) {
+            JOptionPane.showMessageDialog(null, "Nhap username");
+        } else {
+            login.getScene().getWindow().hide();
+            Stage forgot = new Stage();
+            Parent root = FXMLLoader.load(getClass().getResource("/sample/ForgotPass.fxml"));
+            Scene scene = new Scene(root);
+            forgot.setScene(scene);
+            forgot.setResizable(false);
+            forgot.show();
+        }
+
+
     }
 }

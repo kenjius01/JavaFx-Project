@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
@@ -20,5 +22,17 @@
             <Image url="@../../res/content/mycart.gif" />
          </image>
       </ImageView>
+      <JFXButton layoutX="320.0" layoutY="480.0" onAction="#delete" style="-fx-background-radius: 4px;" text="Delete" textFill="#c42020">
+         <graphic>
+            <ImageView fx:id="deleteImgView" fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/symbol/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>

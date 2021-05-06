@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#back" prefHeight="445.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ForgotPass">
+   <children>
+      <TextField fx:id="emailText" layoutX="179.0" layoutY="173.0" prefHeight="26.0" prefWidth="238.0" />
+      <JFXButton fx:id="check" layoutX="179.0" layoutY="224.0" onAction="#checkEmail" style="-fx-background-color: #2ddcc2;" text="Check" textFill="#1c1526">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label layoutX="179.0" layoutY="135.0" prefHeight="26.0" prefWidth="232.0" text="Enter your email address">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="45.0" prefHeight="27.0" prefWidth="343.0" text="Can't sign in? Forgot your password?" AnchorPane.bottomAnchor="372.8" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="114.80000000000001" AnchorPane.topAnchor="45.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="83.0" prefHeight="27.0" prefWidth="369.0" text="Enter your email address below and we 'll send you" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="89.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="107.0" prefHeight="27.0" prefWidth="398.0" text="password reset instructions.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="emailImgView" fitHeight="30.0" fitWidth="38.0" layoutX="119.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/symbol/email.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="Pane" layoutY="262.0" prefHeight="182.0" prefWidth="546.0" visible="false">
+         <children>
+            <ImageView fx:id="passImgView" fitHeight="30.0" fitWidth="38.0" layoutX="119.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/symbol/password.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pass1" fitHeight="30.0" fitWidth="38.0" layoutX="119.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/symbol/password.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="373.0" layoutY="125.0" onAction="#setNewPass" style="-fx-background-color: #2ddcc2;" text="OK" textFill="#1c1526">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></JFXButton>
+            <PasswordField fx:id="passText1" layoutX="180.0" layoutY="79.0" prefHeight="26.0" prefWidth="247.0" promptText="Confirm your password" />
+            <PasswordField fx:id="passText" layoutX="180.0" layoutY="24.0" prefHeight="26.0" prefWidth="247.0" promptText="Enter your new password" />
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="461.0" layoutY="11.0" onAction="#back" prefHeight="39.0" prefWidth="62.0" style="-fx-background-color: #2ddcc2;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.03719298169016838" green="0.019883040338754654" blue="0.06315789371728897" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.49769585253456233">
+                     <color>
+                        <Color red="0.03719298169016838" green="0.019883040338754654" blue="0.06315789371728897" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></JFXButton>
+   </children>
+</AnchorPane>

@@ -156,7 +156,7 @@
             <Cursor fx:constant="HAND" />
          </cursor></JFXButton>
       <JFXCheckBox fx:id="checkBox" checkedColor="#10509c" layoutX="164.0" layoutY="292.0" onAction="#check" prefHeight="30.0" prefWidth="124.0" text="Remember me" />
-      <JFXButton layoutX="180.0" layoutY="342.0" prefHeight="26.0" prefWidth="220.0" text="Forgot your password?" underline="true">
+      <JFXButton layoutX="180.0" layoutY="342.0" onAction="#forgot" prefHeight="26.0" prefWidth="220.0" text="Forgot your password?" underline="true">
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
          </cursor>
